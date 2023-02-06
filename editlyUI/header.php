@@ -83,21 +83,16 @@
         <nav class="mt-2">
           <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
 
-            <li class="nav-item">
-            <a href="allVideos" class="nav-link">
-              <i class="nav-icon fas fa-th"></i>
+          
+          <li class="nav-item">
+            <a href="create_project" class="nav-link">
+            <i class="nav-icon fas fa-th"></i>
               <p>
-                All Videos
-                <span class="right badge badge-danger"><?php 
-                $response = file_get_contents('http://localhost:5000/editly');
-                $response = json_decode($response);
-                // var_dump(count($response->videoUrl));
-                echo(count($response->videoUrl));
-                ?></span>
+                Projects
+                <!-- <span class="right badge badge-danger">New</span> -->
               </p>
             </a>
           </li>
-
           <li class="nav-item">
             <a href="add_video" class="nav-link">
               <i class="nav-icon fas fa-edit"></i>

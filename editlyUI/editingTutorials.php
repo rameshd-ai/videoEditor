@@ -8,12 +8,12 @@
                 <div class="col-sm-6">
                     <h1 class="m-0">Video Tutorials</h1>
                 </div><!-- /.col -->
-                <!-- <div class="col-sm-6">
+                <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
-              <li class="breadcrumb-item"><a href="#">Home</a></li>
-              <li class="breadcrumb-item active">Dashboard v1</li>
+              <li class="breadcrumb-item"><a href="/editlyUI">Home</a></li>
+              <li class="breadcrumb-item active">Video Tutorials</li>
             </ol>
-          </div> -->
+          </div>
                 <!-- /.col -->
             </div><!-- /.row -->
         </div><!-- /.container-fluid -->

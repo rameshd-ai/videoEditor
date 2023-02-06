@@ -162,39 +162,23 @@
     }, 4000);
 </script>
 <script>
-    // var oldCount;
-    // $.ajax({
-    //     type: "GET",
-    //     url: "http://localhost:5000/editly",
-    //     success: function(data) {
-    //         oldCount = data['videoUrl'].length;
-    //         console.log(oldCount);
-    //         // console.log();
-    //     }
-    // });
-
-
-
-
 var url_string = window.location.href;
 var url = new URL(url_string);
 var project = url.searchParams.get("project");
-var id = url.searchParams.get("id");
+console.log(project);
 var loop =0;
     setInterval(function() {
         loop++;
                 $.ajax({
                     type: "GET",
-                    url: "http://localhost:5000/processing/"+project+'/'+ id,
+                    url: "http://localhost:5000/finalProcessing/"+project,
                     success: function(data) {
                         console.log(data['fileCount']);
 
                        if(data['fileCount'] == 3){
-                        window.location.replace("http://localhost/editlyUI/allVideos?project="+project+'&id='+id);
+                        window.location.replace("http://localhost/editlyUI/allVideos?project="+project);
                        }
                     }
                 });
             }, 5000);
-
-
 </script>
